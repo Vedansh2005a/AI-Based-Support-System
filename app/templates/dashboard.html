@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Support Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/dashboard.css"
+    >
+
+    <script
+        src="/static/dashboard.js"
+        defer
+    ></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="/dashboard">
+            <span class="brand-icon">S</span>
+            <span>
+                <strong>ShopEase</strong>
+                <small>Customer Support</small>
+            </span>
+        </a>
+
+        <div class="topbar-right">
+            <span class="live-indicator"></span>
+            <span>Support Operations</span>
+            <a class="docs-link" href="/docs">API Docs ↗</a>
+            <a class="docs-link" href="/chat">Open Chatbot ↗</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <div>
+                <p class="eyebrow">SUPPORT CENTER</p>
+                <h1>Support dashboard</h1>
+                <p class="subtitle">
+                    Manage escalations and keep customer issues moving.
+                </p>
+            </div>
+
+            <button id="refreshButton" class="primary-button">
+                <span aria-hidden="true">↻</span>
+                Refresh tickets
+            </button>
+        </section>
+
+        <div id="notice" class="notice" role="status" aria-live="polite"></div>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Total tickets</span>
+                    <span class="stat-icon icon-blue">▤</span>
+                </div>
+                <strong id="totalCount">0</strong>
+                <small>All support requests</small>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Open</span>
+                    <span class="stat-icon icon-orange">◷</span>
+                </div>
+                <strong id="openCount">0</strong>
+                <small>Awaiting attention</small>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>In progress</span>
+                    <span class="stat-icon icon-purple">↗</span>
+                </div>
+                <strong id="progressCount">0</strong>
+                <small>Being handled</small>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Resolved</span>
+                    <span class="stat-icon icon-green">✓</span>
+                </div>
+                <strong id="resolvedCount">0</strong>
+                <small>Completed requests</small>
+            </article>
+        </section>
+
+        <section class="tickets-panel">
+            <div class="panel-heading">
+                <div>
+                    <h2>Support tickets</h2>
+                    <p>Review escalations and update their status.</p>
+                </div>
+
+                <span id="visibleCount" class="result-count">
+                    0 tickets
+                </span>
+            </div>
+
+            <div class="filters">
+                <label class="search-wrapper">
+                    <span aria-hidden="true">⌕</span>
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search ticket, message or reason..."
+                        aria-label="Search tickets"
+                    >
+                </label>
+
+                <select id="statusFilter" aria-label="Filter by status">
+                    <option value="">All statuses</option>
+                    <option value="open">Open</option>
+                    <option value="in_progress">In progress</option>
+                    <option value="resolved">Resolved</option>
+                </select>
+
+                <select id="departmentFilter" aria-label="Filter by department">
+                    <option value="">All departments</option>
+                    <option value="Billing & Payments">Billing &amp; Payments</option>
+                    <option value="Returns & Refunds">Returns &amp; Refunds</option>
+                    <option value="Orders & Shipping">Orders &amp; Shipping</option>
+                    <option value="Account & Security">Account &amp; Security</option>
+                    <option value="Subscription Support">Subscription Support</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Product & Warranty">Product &amp; Warranty</option>
+                    <option value="General Customer Support">General Customer Support</option>
+                </select>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket</th>
+                            <th>Customer message</th>
+                            <th>Department</th>
+                            <th>Escalation reason</th>
+                            <th>Created</th>
+                            <th>Status / Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="ticketRows">
+                        <tr>
+                            <td colspan="6" class="empty-state">
+                                Loading tickets...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel-footer">
+                <span>Data source: Support ticket database</span>
+                <span id="lastUpdated">Not refreshed yet</span>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span>ShopEase Customer Support</span>
+            <span>AI-assisted · Human-reviewed</span>
+        </footer>
+    </main>
+</body>
+</html>

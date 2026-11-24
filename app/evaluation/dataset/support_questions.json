@@ -1,0 +1,104 @@
+[
+  {
+    "id": "account_001",
+    "category": "account_security",
+    "user_input": "How can I reset my ShopEase password?",
+    "reference": "Choose Forgot Password on the sign-in page and follow the instructions sent to your registered contact method. Use only the official ShopEase website or app.",
+    "reference_contexts": [
+      "Choose Forgot Password on the sign-in page and follow the instructions sent to the registered contact method. Use the official ShopEase website or app only."
+    ]
+  },
+  {
+    "id": "account_002",
+    "category": "account_security",
+    "user_input": "Can I send my OTP to support so they can verify me?",
+    "reference": "No. ShopEase support must never ask for or receive your OTP. Support must also never ask for passwords, recovery codes, or full payment card credentials.",
+    "reference_contexts": [
+      "Support must never ask for passwords, OTPs, recovery codes, or full payment card credentials. Do not reveal account data before authentication and authorization."
+    ]
+  },
+  {
+    "id": "cancel_001",
+    "category": "cancellation",
+    "user_input": "Why can't I cancel my order from the website?",
+    "reference": "An order may be cancellable while it is awaiting processing. Orders that have been packed or dispatched may no longer be cancellable through the website. If Cancel Order is unavailable, contact support for a review.",
+    "reference_contexts": [
+      "An order may be eligible for cancellation while it is awaiting processing. Orders that have been packed or dispatched may no longer be cancellable through the website.",
+      "Open My Orders, select the order, and check whether Cancel Order is available. If it is unavailable, contact support for a review."
+    ]
+  },
+  {
+    "id": "refund_001",
+    "category": "refund",
+    "user_input": "How long does it take for an approved return refund to be initiated?",
+    "reference": "After the returned item is received and inspected, an approved refund is initiated within 3–5 business days. The time for the funds to appear depends on the payment provider and bank.",
+    "reference_contexts": [
+      "After the returned item is received and inspected, an approved refund is initiated within 3–5 business days. The time for funds to appear depends on the payment provider and bank."
+    ]
+  },
+  {
+    "id": "refund_002",
+    "category": "refund",
+    "user_input": "Can the AI approve my refund?",
+    "reference": "No. The AI assistant must not approve refunds, promise an outcome, or change order status by itself. It may explain the policy and create an escalation request. Refund disputes should be routed to an authorized human agent.",
+    "reference_contexts": [
+      "The AI assistant must not approve refunds, promise an outcome, or change order status by itself. It may explain policy and create an escalation request. Disputes, damaged items, rejected returns, and overdue refunds should be routed to an authorized human agent."
+    ]
+  },
+  {
+    "id": "tracking_001",
+    "category": "order_tracking",
+    "user_input": "My tracking has not updated after dispatch. What should I do?",
+    "reference": "Carrier scans can take time to appear. Allow up to 24 hours after dispatch for the first tracking event. If no update appears after that period, contact support.",
+    "reference_contexts": [
+      "Carrier scans can take time to appear. Allow up to 24 hours after dispatch for the first tracking event. If no update appears after that period, contact support."
+    ]
+  },
+  {
+    "id": "shipping_001",
+    "category": "shipping",
+    "user_input": "What is the estimated standard delivery time?",
+    "reference": "Standard delivery is estimated at 3–7 business days after dispatch. This is an estimate, not a guarantee, and can be affected by weather, carrier capacity, holidays, or remote delivery locations.",
+    "reference_contexts": [
+      "Standard delivery is estimated at 3–7 business days after dispatch. Express delivery, where available, is estimated at 1–3 business days. Estimates are not guarantees and can be affected by weather, carrier capacity, holidays, or remote delivery locations."
+    ]
+  },
+  {
+    "id": "payment_001",
+    "category": "payments",
+    "user_input": "I see two charges for one order. What should I do?",
+    "reference": "Check whether both entries are completed charges or whether one is pending. Suspected duplicate completed charges should be escalated to the payments team. Do not share full card numbers, CVV, passwords, or OTPs.",
+    "reference_contexts": [
+      "Ask the customer to check whether both entries are completed charges or whether one is pending. Do not request full card numbers, CVV, passwords, or one-time passwords. Escalate suspected duplicate completed charges to the payments team."
+    ]
+  },
+  {
+    "id": "troubleshooting_001",
+    "category": "product_troubleshooting",
+    "user_input": "My electronic product is overheating. What should I do?",
+    "reference": "Stop using the product if it is overheating. Follow the manufacturer's instructions and safety warnings. Do not open the device, bypass safety mechanisms, or attempt unsafe repairs. For urgent hazards, follow local emergency or manufacturer guidance.",
+    "reference_contexts": [
+      "Stop using the product if it is overheating, smoking, sparking, leaking, or appears unsafe.",
+      "Never instruct customers to open mains-powered devices, bypass safety mechanisms, handle exposed wiring, or perform repairs that could cause injury. For urgent hazards, advise the customer to stop use and follow local emergency or manufacturer guidance."
+    ]
+  },
+  {
+    "id": "warranty_001",
+    "category": "warranty",
+    "user_input": "Is my ShopEase product covered by warranty?",
+    "reference": "Warranty duration, covered defects, exclusions, and remedies vary by manufacturer and product. Check the product listing, warranty card, and manufacturer's terms. The assistant must not guarantee coverage without an authorized decision.",
+    "reference_contexts": [
+      "Warranty duration, covered defects, exclusions, and remedies vary by manufacturer and product. The product listing, warranty card, and manufacturer's terms are the authoritative sources for a particular item.",
+      "The AI assistant may summarize documented warranty terms but must not guarantee coverage or approve a repair or replacement without an authorized decision."
+    ]
+  },
+  {
+    "id": "subscription_001",
+    "category": "subscription",
+    "user_input": "How do I cancel my ShopEase subscription?",
+    "reference": "Open Account Settings, select Subscriptions, and follow the cancellation steps. If the cancellation option is missing or an error occurs, contact support.",
+    "reference_contexts": [
+      "Customers can open Account Settings, select Subscriptions, and follow the cancellation steps. If the option is missing or an error occurs, contact support."
+    ]
+  }
+]

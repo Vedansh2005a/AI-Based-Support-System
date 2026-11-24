@@ -1,0 +1,58 @@
+
+# API backend
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-multipart
+
+# AI agent and RAG
+langchain
+langchain-core
+langgraph
+langchain-community
+langchain-groq
+langchain-openai
+
+# Vector database
+pinecone
+sentence-transformers
+
+# Database and persistence
+sqlalchemy
+psycopg[binary]
+alembic
+
+# Cache and background tasks
+redis
+celery
+
+# Dashboard and visualizations
+streamlit
+plotly
+pandas
+
+# Authentication and security
+python-jose[cryptography]
+pwdlib[argon2]
+slowapi
+
+# HTTP clients and configuration
+httpx
+python-dotenv
+tenacity
+orjson
+
+# Observability and metrics
+logfire
+prometheus-client
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+opentelemetry-exporter-otlp
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+ragas
+deepeval

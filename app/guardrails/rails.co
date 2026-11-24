@@ -1,0 +1,21 @@
+
+define flow check input safety
+  $is_safe = execute check_input_safety()
+  if not $is_safe
+    bot refuse to respond
+    stop
+
+define flow check topic allowed
+  $is_allowed = execute check_topic_allowed()
+  if not $is_allowed
+    bot refuse to respond
+    stop
+
+define flow check output safety
+  $is_safe = execute check_output_safety()
+  if not $is_safe
+    bot refuse to respond
+    stop
+
+define bot refuse to respond
+  "I can help with questions about our products, services, troubleshooting, and customer support."

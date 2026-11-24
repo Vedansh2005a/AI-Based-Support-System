@@ -1,0 +1,6 @@
+id,category,user_input,faithfulness,answer_relevancy
+account_001,account_security,How can I reset my ShopEase password?,0.0,0.0
+account_002,account_security,Can I send my OTP to support so they can verify me?,0.75,0.9999999999999997
+cancel_001,cancellation,Why can't I cancel my order from the website?,0.5714285714285714,0.9999999999999242
+refund_001,refund,How long does it take for an approved return refund to be initiated?,1.0,0.9582135061154818
+refund_002,refund,Can the AI approve my refund?,1.0,0.9999999999999992

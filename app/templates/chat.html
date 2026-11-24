@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | AI Support Chat</title>
+
+    <link rel="stylesheet" href="/static/chat.css">
+    <script src="/static/chat.js" defer></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="/chat">
+            <span class="brand-icon">S</span>
+            <span>
+                <strong>ShopEase</strong>
+                <small>AI Customer Support</small>
+            </span>
+        </a>
+
+        <a class="dashboard-link" href="/dashboard">
+            Support Dashboard ↗
+        </a>
+    </header>
+
+    <main class="chat-page">
+        <section class="welcome">
+            <span class="eyebrow">CUSTOMER CARE</span>
+            <h1>How can we help you?</h1>
+            <p>Ask a question about payments, orders, refunds or products.</p>
+        </section>
+
+        <section class="chat-card">
+            <div class="chat-header">
+                <div class="assistant-avatar">AI</div>
+                <div class="assistant-info">
+                    <strong>ShopEase Support Assistant</strong>
+                    <span><i class="online-dot"></i> AI support assistant</span>
+                </div>
+                <span class="secure-label">RAG + Guardrails</span>
+            </div>
+
+            <div
+                id="messages"
+                class="messages"
+                role="log"
+                aria-live="polite"
+                aria-label="Chat conversation"
+            >
+                <div class="message assistant">
+                    <div class="bubble">
+                        Hi! Welcome to ShopEase. How can I help you today?
+                        You can ask me about payments, orders, returns,
+                        refunds or troubleshooting.
+                    </div>
+                </div>
+            </div>
+
+            <div id="errorNotice" class="error-notice" role="alert"></div>
+
+            <form id="chatForm" class="chat-form">
+                <textarea
+                    id="messageInput"
+                    rows="1"
+                    maxlength="5000"
+                    placeholder="Type your support question..."
+                    aria-label="Your message"
+                    required
+                ></textarea>
+
+                <button id="sendButton" type="submit">
+                    Send <span aria-hidden="true">➤</span>
+                </button>
+            </form>
+
+            <div class="chat-footer">
+                <span>Do not share passwords or payment credentials.</span>
+                <span>Powered by AI · Human handoff available</span>
+            </div>
+        </section>
+
+        <p class="page-note">
+            For account-specific actions or issues the assistant cannot resolve,
+            a support ticket may be created for human assistance.
+        </p>
+    </main>
+</body>
+</html>

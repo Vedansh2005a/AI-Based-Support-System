@@ -1,0 +1,12 @@
+question,context_precision,context_recall
+How can I reset my ShopEase password?,0.9999999999,1.0
+Can I send my OTP to support so they can verify me?,0.94999999997625,1.0
+Why can't I cancel my order from the website?,0.99999999995,1.0
+How long does it take for an approved return refund to be initiated?,0.9999999999,1.0
+Can the AI approve my refund?,0.999999999975,1.0
+My tracking has not updated after dispatch. What should I do?,0.999999999975,1.0
+What is the estimated standard delivery time?,0.9999999999,1.0
+I see two charges for one order. What should I do?,0.94999999997625,1.0
+My electronic product is overheating. What should I do?,0.9999999999666667,1.0
+Is my ShopEase product covered by warranty?,0.9166666666361111,1.0
+How do I cancel my ShopEase subscription?,0.9999999999,1.0
